@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/Pluperfect.HCaptcha/Pluperfect.HCaptcha.csproj" />
+  <Project Path="tests/Pluperfect.HCaptcha.Tests/Pluperfect.HCaptcha.Tests.csproj" />
+</Solution>
