@@ -11,6 +11,15 @@ of one question, in one repository, so a project adopts both from a single check
 | `client/` | The React hook. An npm package, consumed by a `file:` dependency. |
 | `tests/Pluperfect.HCaptcha.Tests` | NUnit. The registration rule is the safety story, so it is what gets asserted. |
 
+## Scope
+
+Infrastructure for one small fleet of sites, public because keeping it private cost more than it
+was worth. It is deliberately narrow and lives on no registry.
+
+You are welcome to read it, copy from it, or lift whatever is useful. One honest caveat: it changes
+when those sites need it to rather than on any schedule, so pin a commit or fork it if you come to
+depend on it. Questions are welcome, though answers may take a while.
+
 ## The shape
 
 Server:
@@ -204,3 +213,7 @@ No visible checkbox component, no theming, no `onVerify` callback prop. The hook
 only, because every form in this fleet wants the same thing: a token at submit time and nothing in
 the layout. Each of those is easy to add later and impossible to remove once a caller depends on
 it.
+
+## License
+
+MIT. See [LICENSE](LICENSE).

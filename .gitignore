@@ -11,15 +11,9 @@ artifacts/
 *.coverage
 *.coveragexml
 
-# --- Local development -----------------------------------------------------
-# FileMailer writes .eml here when Mail:PickupDirectory points at it. These are
-# real composed messages and can carry whatever a form was filled in with.
-pickup/
-*.eml
-
 # --- Secrets ---------------------------------------------------------------
-# Nothing in this repository needs a token. The Postmark server token is read
-# from the consuming deployment's own configuration on its own box, so a token
+# Nothing in this repository needs a secret. The hCaptcha secret key is read from
+# the consuming deployment's own configuration on its own box, so a credential
 # appearing here is a mistake rather than a file to be ignored.
 appsettings.Production.json
 *.env
